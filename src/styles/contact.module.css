@@ -1,0 +1,49 @@
+.contactMain {
+    height: 90%;
+    width: 96%;
+    top: 4.5rem;
+    left: 1.75rem;
+    background-color: black;
+    color: white;
+    position: absolute;
+    z-index: 300;
+    border-color: white;
+    border-width: 0.11rem;
+    border-style: solid;
+    border-radius: 0.7rem 3.6rem 0.7rem 3.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: var(--heading_font);
+    font-size: 6rem;
+    font-weight: 270;
+    margin-top: 1rem;
+    margin-left:2rem;
+    width: fit-content;
+    border-bottom: 0.15rem solid white;
+}
+
+.contactText {
+    font-family: var(--body_font);
+    font-size: 1.7rem;
+    margin: 0rem 1rem 1.8rem 3rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+}
+
+.flavorText {
+    font-family: var(--body_font);
+    font-size: 1.25rem;
+    font-weight: 350;
+    margin-left: 52%;
+    padding: 2rem 1rem 2rem 1.3rem;
+    letter-spacing: 0.14rem;
+    width: 45%;
+    border-width: 0.11rem;
+    border-style: solid;
+    border-radius: 0.7rem 1.9rem 0.7rem 1.9rem;
+    margin-top: -20rem;
+    height: fit-content;
+}

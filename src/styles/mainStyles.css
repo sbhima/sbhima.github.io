@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+
+
+.annotation {
+  /* transform: translate3d(-50%, -210%, 0); */
+  text-align: center;
+  background: black;
+  color: white;
+  border-radius: 1rem;
+  border-color: white;
+  border-width: 0.11rem;
+  border-style: solid;
+  padding: 16px;
+  border-radius: 1rem;
+  font-size: 1.9rem;
+  width: 11.6rem;
+  font-family: var(--skinny_font);
+  font-weight: 400;
+  word-spacing: 110%;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  background-color: black;
+  color: white;
+  font-weight: 300;
+  z-index: 100;
+  text-align: center;
+  border-bottom: 0.1rem solid white;
+}
+
+.home-button {
+  text-align: center;
+  background-color: transparent;
+  width: 4.0rem;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  border-bottom: 0.15rem solid white;
+  appearance: none;
+  cursor: pointer;
+  color: white;
+  font-family: var(--title_font);
+  font-weight: 400;
+  font-size: 1.3rem;
+  z-index: 150;
+}
+
+@keyframes moveOffScreen {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.intro-div {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  text-align: center; 
+  opacity: 100;
+  top: 0rem; /*for the animation, set it to -60*/
+  animation: moveOffScreen 3s ease-in 0s forwards;
+  position: absolute;
+  z-index: 1500;
+
+}
+
+.intro-text {
+  font-family: var(--skinny_font);
+  font-size: 8rem;
+  margin-top:15%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 0.15rem solid white;
+}
