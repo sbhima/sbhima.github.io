@@ -13,7 +13,7 @@ export default function Welcome() {
             <p className={styles.flavorText} >
                 My name is Shivank Bhimavarapu, and I'm a junior majoring in 
                 Math and CS at UMD College Park. I'm a web dev enthusiast
-                and I'm pasionate for machine learning and data science.
+                and I'm passionate for machine learning and data science.
                 <br></br>
                 <br></br>
                 I wanted to find a space beyond social media to express myself, 
