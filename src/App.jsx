@@ -107,12 +107,11 @@ export default function App() {
 }
 function Sun() {
   const sunRef = React.useRef();
-  const sunMap = useLoader(TextureLoader, 'sun-1.jpeg')
   
   return (
     <mesh >
       <sphereGeometry args={[2.5, 20, 20]} />
-      <meshStandardMaterial map={sunMap} color="#ffff00" emissive={"#ffff00"} emissiveIntensity={2} toneMapped={false} />
+      <meshStandardMaterial color="#ffff00" emissive={"#ffff00"} emissiveIntensity={2} toneMapped={false} />
     </mesh>
   );
 }

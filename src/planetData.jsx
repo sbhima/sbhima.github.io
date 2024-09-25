@@ -20,7 +20,7 @@ const planetData = [
         speed: 0.35,
         offset: 0,
         name: "About Me",
-        textureName: "ice-planet-1.png",
+        textureName: "ice-planet-1-large.jpeg",
         rotationSpeed: 0.02
       },
       {
@@ -44,7 +44,7 @@ const planetData = [
         speed: 0.41,
         offset: 3.14,
         name: "Start Here!",
-        textureName: "coruscant-light.png",
+        textureName: "coruscant-large.jpeg",
         rotationSpeed: 0.021
       }
 ];
