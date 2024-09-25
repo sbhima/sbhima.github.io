@@ -1,8 +1,14 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the repo for everything you see on my personal website.
 
-Currently, two official plugins are available:
+All of the 3D modeling was done using React 3 Fiber and Drei. Here are some of the links that I used to get started.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**The base model for the solar system**: https://medium.com/geekculture/build-3d-apps-with-react-animated-solar-system-part-1-c4c394a8574c
+
+**The animation system**: https://codesandbox.io/p/sandbox/bounds-and-makedefault-rz2g0?file=%2Fsrc%2FApp.js
+
+
+All of the planet textures were from Adobe Stock Images...the abstract colorful wallpapers found online look an awful lot like planets...
+
+If your curious about anythign on there, don't hesitate to reach out at: shivank.bhimavarapu@gmail.com
