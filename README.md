@@ -11,4 +11,4 @@ All of the 3D modeling was done using React 3 Fiber and Drei. Here are some of t
 
 All of the planet textures were from Adobe Stock Images...the abstract colorful wallpapers found online look an awful lot like planets...
 
-If your curious about anythign on there, don't hesitate to reach out at: shivank.bhimavarapu@gmail.com
+If your curious about anything on there, don't hesitate to reach out at: shivank.bhimavarapu@gmail.com
