@@ -24,7 +24,7 @@ export default function About() {
                 <Card img={shivank_band} 
                 title={"Music"}
                 flavor_text={"I first fell in love with instrumental music in high school when I joined marching band. I've been playing Tuba for 5 years now, and I'm a fan of all forms of instrumental music - Big Band, Jazz, Classical, DCI - I love them all."}
-                img_width={0.083*3024}
+                img_width={0.085*3024}
                 img_height={0.085*4032}
                 left_spacing={"22rem"}
                 />
@@ -41,8 +41,8 @@ export default function About() {
                 <Card img={digital_art} 
                 title={"Digital Art"}
                 flavor_text={"In college, I've finally found time to start creating digital art. While I haven't completed many projects yet, I still enjoy the process of giving life to the things I draw. I also want to start trying out other forms of media, like canvas art."}
-                img_width={0.087*3024}
-                img_height={0.12*4032}
+                img_width={0.085*3024}
+                img_height={0.085*4032}
                 left_spacing={"66rem"}
                 />
 
