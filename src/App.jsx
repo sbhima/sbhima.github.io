@@ -60,7 +60,7 @@ export default function App() {
               alt="github" 
               cursor="pointer"
               className="github-icon" 
-              onClick={() => window.open("https://github.com/SBhima")}
+              onClick={() => window.open("https://github.com/SBhima/shivank-portfolio")}
               width={30}
               height={30}/>
 
