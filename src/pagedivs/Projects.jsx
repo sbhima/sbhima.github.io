@@ -36,7 +36,7 @@ export default function Projects() {
 
             </div>
             
-            <h2 className={styles.resumeText} >Check out my <a href="https://drive.google.com/file/d/1NkSWjFKh66r9mpMniY8Huj1sBG2VNWzH/view?usp=sharing" target='_blank' >resume</a> for more info!</h2>
+            <h2 className={styles.resumeText} >Check out my <a href="https://drive.google.com/file/d/1PjOf4bmaaAXNWOOaJ2bqHdQYekhxFW_o/view?usp=sharing" target='_blank' >resume</a> for more info!</h2>
 
         </div>
     )
