@@ -1,11 +1,11 @@
 .cardMain {
-    height: 87%;
-    width: 22%;
+    /* height: 87%; */
+    width: 20rem;
     top: 4.8rem;
     left: 1.75rem;
     background-color: black;
     color: white;
-    position: absolute;
+    /* position: absolute; */
     z-index: 300;
     font-weight: 200;
     text-align: center;

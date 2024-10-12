@@ -13,7 +13,7 @@ export default function Contact() {
                 <br></br><br></br>
 
                  - Everyone on the <a href="https://github.com/pmndrs" target='_blank'>Poimandres</a> team
-                  for createing the underlying React 3 Fiber (R3F) and Drei libraries for the 3D modeling and animations that went into this.
+                  for creating the underlying React 3 Fiber (R3F) and Drei libraries for the 3D modeling and animations that went into this.
                 
                 <br></br><br></br>
                  - <a href="https://medium.com/@dilums" target='_blank'>
