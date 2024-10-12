@@ -1,6 +1,6 @@
 import styles from '../styles/about.module.css'
 
-import shivank_beach from "../media/shivank-lands-end-medium.jpeg"
+import shivank_beach from "../media/beach-real-large.jpeg"
 import shivank_band from "../media/shivank-senior-band.jpg"
 import salaar_poster from "../media/salaar-poster.jpg"
 import digital_art from "../media/shivank-art.jpeg"
