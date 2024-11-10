@@ -30,7 +30,7 @@ export default function App() {
 
 
   const orbitref = React.useRef();
-  const [paused, setPaused] = useState([0,10,25]);
+  const [paused, setPaused] = useState([10,13,25]);
   
 
   function pause(msg,p_size) {
@@ -49,7 +49,7 @@ export default function App() {
         <button  className="home-button" onClick={() => { 
           orbitref.current.reset();
           animate.current = true;
-          setPaused([0,10,25]);
+          setPaused([10,13,25]);
           console.log( `button${animate.current}`);
           page.current = 0;
         }}>
@@ -87,7 +87,7 @@ export default function App() {
         </EffectComposer>
 
         <Sun />
-        <Stars radius={1} depth={70} count={20000} factor={4} saturation={0.5} fade speed={1} />
+        <Stars radius={15} depth={82} count={22000} factor={4.3} saturation={1} fade={10} speed={1.5} />
 
         
         <Bounds fit clip observe margin={0.72}>
@@ -154,8 +154,8 @@ function Planet({ planet: { color, xRadius, zRadius, size, speed, offset,name,te
 function Lights() {
   return (
     <>
-      <ambientLight intensity={0.7} />
-      <pointLight position={[0, 0, 0]} intensity={150} />
+      <ambientLight intensity={1.2} />
+      <pointLight position={[0, 0, 0]} intensity={500} />
     </>
   );
 }
