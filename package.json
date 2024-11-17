@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://SBhima.github.io/shivank-portfolio/",
+  "homepage": "https://sbhima.github.io/",
   "scripts": {
     "predeploy" : "npm run build",
     "deploy" : "gh-pages-clean gh-pages -d build",
