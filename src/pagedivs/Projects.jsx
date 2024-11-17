@@ -4,10 +4,12 @@ import Card from '../components/Card'
 import testudo_tracker_logo from "../media/testudo-tracker-logo-medium.jpeg"
 import mario_image from "../media/mario.jpg"
 import tj_logo from "../media/tj-logo-medium.jpeg"
+import { Center } from '@react-three/drei'
 
 
 export default function Projects() {
     return (
+
         <div className={styles.projectsMain}>
             <h1 className={styles.projectsTitle}>Recent Projects</h1>
 
@@ -36,7 +38,7 @@ export default function Projects() {
 
             </div>
             
-            <h2 className={styles.resumeText} >Check out my <a href="https://drive.google.com/file/d/1PjOf4bmaaAXNWOOaJ2bqHdQYekhxFW_o/view?usp=sharing" target='_blank' >resume</a> for more info!</h2>
+            {/* <h2 className={styles.resumeText} >Check out my <a href="https://drive.google.com/file/d/1PjOf4bmaaAXNWOOaJ2bqHdQYekhxFW_o/view?usp=sharing" target='_blank' >resume</a> for more info!</h2> */}
 
         </div>
     )

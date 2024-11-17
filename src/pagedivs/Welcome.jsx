@@ -23,7 +23,7 @@ export default function Welcome() {
                     <br></br>
                     Feel free to look around the rest of the website by clicking the 
                     "Home" button above. And please please PLEASE check out the 
-                    developers in the "Contact" section, this wesbite would've 
+                    developers in the "Contact" section, this website would've 
                     been impossible without them, so huge thanks to them.
                 </p>
             </div>
