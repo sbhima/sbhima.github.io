@@ -19,6 +19,7 @@ import "./styles/mainStyles.css";
 import "./styles/globals.css";
 
 import github_icon from './media/github-icon.png'
+import { uniform } from "three/webgpu";
 
 
 
@@ -118,11 +119,18 @@ function Sun() {
   const sunRef = React.useRef();
   const material = React.useRef();
 
-
+  const uniforms = useMemo(
+    () => ({
+      time: { value: 0.0 },
+      intensity: { value: 1.0 }
+    }),
+    []
+  )
+  
   useFrame(({ clock }) => {
 
-    material.current.uniforms.time.value = clock.getElapsedTime() * 0.7;
-    material.current.uniforms.intensity.value = 1.0 + 0.5 * Math.sin(clock.getElapsedTime() * 2.0);
+    uniforms.time.value = clock.getElapsedTime() * 0.7;
+    uniforms.intensity.value = 1.0 + 0.5 * Math.sin(clock.getElapsedTime() * 2.0);
     sunRef.current.rotation.y += 0.02;
 
   });
@@ -130,14 +138,12 @@ function Sun() {
 
   return (
     <>
+    {console.log(uniforms)}
       <mesh ref={sunRef}>
         <sphereGeometry args={[2.5, 44, 44]} />
         <shaderMaterialCustom
           ref={material}
-          uniforms={{
-            time: { value: 0.0 },
-            intensity: { value: 1.0 }
-          }}
+          uniforms={uniforms}
           vertexShader={`
           varying vec2 vUv;
           varying float vDistanceFromCenter;
