@@ -32,12 +32,12 @@
 }
 
 .flavorText {
-    font-family: var(--body_font);
-    font-size: 1.19rem;
-    font-weight: 350;
+    font-family: var(--heading_font);
+    font-size: 1.2rem;
+    font-weight: 300;
     margin-left: 1rem;
     padding: 1rem 1rem 1rem 1.3rem;
-    letter-spacing: 0.14rem;
+    letter-spacing: 0.025rem;
     width: fit-content;
     border-width: 0.11rem;
     border-style: solid;

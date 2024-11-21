@@ -16,9 +16,9 @@
 }
 
 .title {
-    font-family: var(--heading_font);
+    font-family: var(--title_font);
     font-size: 6rem;
-    font-weight: 270;
+    font-weight: 300;
     margin-top: 1rem;
     margin-left:2rem;
     width: fit-content;

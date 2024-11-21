@@ -5,7 +5,7 @@ import * as THREE from "three";
 import { TextureLoader } from "three";
 import planetData from "./planetData";
 import { useState } from "react";
-import { EffectComposer, Bloom, ToneMapping } from "@react-three/postprocessing";
+import { EffectComposer, Bloom, ToneMapping, Vignette } from "@react-three/postprocessing";
 import { Suspense } from 'react'
 
 import Welcome from './pagedivs/Welcome'
@@ -85,10 +85,7 @@ export default function App() {
 
           <Lights />
 
-          {/* <EffectComposer disableNormalPass>
-          <Bloom mipmapBlur luminanceThreshold={1} levels={4} intensity={0.44} />
-          <ToneMapping />
-        </EffectComposer> */}
+
 
           <Sun />
           <RotatingStars />
@@ -102,6 +99,9 @@ export default function App() {
 
 
           <OrbitControls ref={orbitref} />
+          <EffectComposer>
+          <Vignette eskil={false} offset={0.3} darkness={0.8} />
+        </EffectComposer>
 
         </Canvas>
 

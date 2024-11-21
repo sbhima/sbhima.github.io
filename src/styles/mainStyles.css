@@ -97,7 +97,7 @@ body {
 }
 
 .intro-text {
-  font-family: var(--skinny_font);
+  font-family: var(--heading_font);
   font-size: 8rem;
   margin-top:15%;
 }

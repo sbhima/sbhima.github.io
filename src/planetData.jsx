@@ -42,7 +42,7 @@ const planetData = [
         id: 3,
         color: "#ffffff",
         xRadius: (2.7 + 1.8) * 3.15,
-        zRadius: (2.7 + 1.8) * 2.5,
+        zRadius: (2.7 + 1.8) * 2.7,
         size: 1.7,
         speed: 0.41,
         offset: 3.14,
