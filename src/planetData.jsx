@@ -9,7 +9,8 @@ const planetData = [
         offset: 0.9,
         name: "Contact",
         textureName: "green-planet-2.jpeg",
-        rotationSpeed: 0.01
+        rotationSpeed: 0.01,
+        annotationOffset: 168.48
       },
       {
         id: 1,
@@ -20,8 +21,9 @@ const planetData = [
         speed: 0.35,
         offset: 0,
         name: "About Me",
-        textureName: "ice-planet-1-large.jpeg",
-        rotationSpeed: 0.02
+        textureName: "blue-planet-1.jpeg",
+        rotationSpeed: 0.02,
+        annotationOffset: 198.66
       },
       {
         id: 2,
@@ -32,8 +34,9 @@ const planetData = [
         speed: 0.4,
         offset: 1.28,
         name: "Projects",
-        textureName: "blue-planet-1.jpeg",
-        rotationSpeed: 0.022
+        textureName: "coruscant-large.jpeg", 
+        rotationSpeed: 0.022,
+        annotationOffset: 214.78
       },
       {
         id: 3,
@@ -44,8 +47,9 @@ const planetData = [
         speed: 0.41,
         offset: 3.14,
         name: "Start Here!",
-        textureName: "coruscant-large.jpeg",
-        rotationSpeed: 0.021
+        textureName: "ice-planet-1-large.jpeg", 
+        rotationSpeed: 0.021,
+        annotationOffset: 250.02
       }
 ];
 

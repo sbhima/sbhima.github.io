@@ -19,7 +19,6 @@ import "./styles/mainStyles.css";
 import "./styles/globals.css";
 
 import github_icon from './media/github-icon.png'
-import { uniform } from "three/webgpu";
 
 
 
@@ -92,7 +91,7 @@ export default function App() {
         </EffectComposer> */}
 
           <Sun />
-          <Stars radius={15} depth={82} count={22000} factor={4.3} saturation={1} fade={10} speed={1.5} />
+          <RotatingStars />
 
 
           <Bounds fit clip observe margin={0.72}>
@@ -195,7 +194,7 @@ function Sun() {
     // </mesh>
   );
 }
-function Planet({ planet: { color, xRadius, zRadius, size, speed, offset, name, textureName, rotationSpeed }, pl_animate, pause_func }) {
+function Planet({ planet: { color, xRadius, zRadius, size, speed, offset, name, textureName, rotationSpeed, annotationOffset }, pl_animate, pause_func }) {
   const planetRef = React.useRef();
   const api = useBounds()
 
@@ -223,7 +222,7 @@ function Planet({ planet: { color, xRadius, zRadius, size, speed, offset, name, 
         <sphereGeometry args={[size, 20, 20]} />
         <meshStandardMaterial map={planetMap} color={color} />
         <Html distanceFactor={13.5} zIndexRange={[5, 0]} >
-          <div className="annotation" style={{ transform: `translate3d(-50%, -${(size * 30.6) + 175}%, 0)` }} >{name}</div>
+          <div className="annotation" style={{ transform: `translate3d(-50%, -${annotationOffset}%, 0)` }} >{name}</div>
         </Html>
       </mesh>
       <Ecliptic xRadius={xRadius} zRadius={zRadius} />
@@ -234,10 +233,20 @@ function Planet({ planet: { color, xRadius, zRadius, size, speed, offset, name, 
 function Lights() {
   return (
     <>
-      <ambientLight intensity={1.2} />
-      <pointLight position={[0, 0, 0]} intensity={500} />
+      <ambientLight intensity={1.3} />
+      <pointLight position={[0, 0, 0]} intensity={300} />
     </>
   );
+}
+
+function RotatingStars() {
+  const stars = React.useRef();
+
+  useFrame(() => {
+    stars.current.rotation.y = stars.current.rotation.x -= 0.00035
+  })
+
+  return <Stars ref={stars} radius={15} depth={82} count={22000} factor={4.3} saturation={1} fade={10} speed={1.5} />
 }
 
 function Ecliptic({ xRadius = 1, zRadius = 1 }) {
