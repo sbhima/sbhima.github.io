@@ -28,15 +28,110 @@
     border-bottom: 0.15rem solid white;
 }
 
-.cardHolder {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 1vw;
-    margin-top: 0rem;   
-    align-items: center;
+.gallery {
+    margin-top: -2%;
+    /* border: 1px solid yellow; */
     align-self: center;
-    overflow: auto;
+	/* padding: 1rem; */
+	display: flex;
+	overflow-x: scroll;
+	/* scroll-padding: 0 50%; */
+	scroll-snap-type: x mandatory;
+    height: 85%;
+    width: 100%
 }
+/* look at the bare bones playground */
+
+.firstItem {
+    scroll-snap-align: center;
+    /* display: inline-block; */
+	/* height: 100%; */
+    min-width: 75%;
+    /* width: 100%; */
+	/* border-radius: 3px; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 8.5rem;
+    margin-right: 8.5rem;
+	font-size: 6rem;
+    /* scroll-margin: 0; */
+    /* border-left: 1px solid white; */
+    border: 1px solid white;
+    text-align-last: left;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 50% 25%;
+}
+
+.leftSide {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.galleryItem {
+	scroll-snap-align: center;
+    /* display: inline-block; */
+	/* height: 100%; */
+    min-width: 75%;
+    /* width: 100%; */
+	/* border-radius: 3px; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: -2rem;
+    margin-right: 8.5rem;
+	font-size: 6rem;
+    /* scroll-margin: 0; */
+    border: 1px solid white;
+    /* border-right: 1px solid white; */
+    text-align-last: left;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 50% 25%;
+}
+
+.itemTitle {
+    font-size: 3.9rem;
+    max-width: 50rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    font-family: var(--title_font);
+    font-weight: 300;
+    padding-left: 2rem;
+
+    
+    /* border-bottom: 0.1rem solid white; */
+    /* padding-right: 11rem; */
+    /* underline the title with a thin underline */
+    /* text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 0.15rem;
+    text-underline-offset: 1rem; */
+}
+
+.flavorText {
+    font-size: 1.2rem;
+    max-width: 35rem;
+    font-family: var(--body_font);
+    font-weight: 300;
+    margin-left: 2rem;
+    margin-top: -1.5rem;
+    /* padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: -5rem;
+    margin-bottom: 1rem; */
+}
+
+.galleryImage {
+    position: relative;
+    /* margin-top: 3.2rem; */
+    z-index: 400;
+    /* border-width: 0.11rem;
+    border-style: solid;
+    border-radius: 0rem 0rem 0rem 0rem; */
+
+    /* margin-bottom: 0.4rem; */
+}
+
+
 
 
 
