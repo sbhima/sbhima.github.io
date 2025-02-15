@@ -38,7 +38,7 @@ export default function About() {
                 <div className={styles.galleryItem} >
                     <div className={styles.leftSide}>
                         <h1 className={styles.itemTitle} >Music</h1>
-                        <p className={styles.flavorText} >I first fell in love with instrumental music in high school when I joined marching band. I've been playing Tuba for 5 years now, and I'm a fan of all forms of instrumental music - Big Band, Jazz, Classical, DCI - I love them all.<br></br><br></br> I'm also starting to pick up new intruments too! Inspired by Rach 2 and Tchaikovsky Piano Concertos, I'm learning piano with the help of a few friends. </p>
+                        <p className={styles.flavorText} >I first fell in love with instrumental music in high school when I joined marching band. I've been playing Tuba for 5 years now, and I'm a fan of all forms of instrumental music - Big Band, Jazz, Classical, DCI - I love them all.<br></br><br></br> I'm also starting to pick up new intruments too! Inspired by Rach 2 and Tchaikovsky's Piano Concertos, I'm learning piano with the help of a few friends. </p>
                     </div>
                     <div className={styles.leftSide}>
                         <img src={shivank_band} alt="A picture of me in band"
