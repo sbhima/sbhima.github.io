@@ -1,7 +1,7 @@
 import styles from '../styles/welcome.module.css'
 
 import shivank_sitting from '../media/shivank-cherry-blossoms-sitting-medium.jpeg'
-import shivank_iribe from '../media/shivank-iribe-better-large.jpeg'
+import shivank_shenandoah from '../media/shivank-shenandoah.jpg'
 
 
 
@@ -29,12 +29,12 @@ export default function Welcome() {
             </div>
 
             <div className={styles.middleDiv}>
-            <img src={shivank_sitting} alt="Shivank sitting under cherry blossoms" className={styles.shivankSitting}
+            <img src={shivank_sitting} alt="Me sitting under cherry blossoms in DC" className={styles.shivankSitting}
                 width="100%" height="100%"/>
             </div>
 
             <div className={styles.rightDiv}>
-            <img src={shivank_iribe} alt="Shivank at Great Falls " className={styles.shivankIribe}
+            <img src={shivank_shenandoah} alt="Experiencing a beautiful sunset at Shenandoah National Park " className={styles.shivankShenandoah}
                 />
             </div>
 
