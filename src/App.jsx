@@ -17,6 +17,7 @@ import Contact from './pagedivs/Contact'
 
 import "./styles/mainStyles.css";
 import "./styles/globals.css";
+import styles from "./styles/home_helper.module.css"
 
 import github_icon from './media/github-icon.png'
 
@@ -31,6 +32,8 @@ export default function App() {
 
   const orbitref = React.useRef();
   const [paused, setPaused] = useState([10, 13, 25]);
+  
+  const [homeClicked, setHomeClicked] = useState(false);
 
 
   // todo replace with use memo to memoize function
@@ -93,7 +96,7 @@ export default function App() {
 
           <Bounds fit clip observe margin={0.72}>
             {planetData.map((planet) => (
-              <Planet planet={planet} key={planet.id} pl_animate={planetAnimate} pause_func={pause} />
+              <Planet planet={planet} key={planet.id} pl_animate={planetAnimate} pause_func={pause} home_click = {homeClicked} home_click_func = {setHomeClicked} />
             ))}
           </Bounds>
 
@@ -194,7 +197,7 @@ function Sun() {
     // </mesh>
   );
 }
-function Planet({ planet: { color, xRadius, zRadius, size, speed, offset, name, textureName, rotationSpeed, annotationOffset }, pl_animate, pause_func }) {
+function Planet({ planet: { color, xRadius, zRadius, size, speed, offset, name, textureName, rotationSpeed, annotationOffset }, pl_animate, pause_func, home_click, home_click_func }) {
   const planetRef = React.useRef();
   const api = useBounds()
 
@@ -211,6 +214,8 @@ function Planet({ planet: { color, xRadius, zRadius, size, speed, offset, name, 
 
   const planetMap = useLoader(TextureLoader, textureName)
 
+
+  
   return (
     <>
       <mesh ref={planetRef} onClick={(e) => {
@@ -218,11 +223,17 @@ function Planet({ planet: { color, xRadius, zRadius, size, speed, offset, name, 
         console.log(`planet${size} has been clicked at location${[planetRef.current.position.x, 0, planetRef.current.position.z]}`);
         pause_func([planetRef.current.position.x, 0, planetRef.current.position.z], { size });
         e.delta <= 2 && api.refresh(e.object).fit();
+        if (name == "Start Here!" && home_click == false) {
+          home_click_func(true);
+          console.log(`home clicked${home_click}`);
+        }
       }} >
         <sphereGeometry args={[size, 20, 20]} />
         <meshStandardMaterial map={planetMap} color={color} />
         <Html distanceFactor={13.5} zIndexRange={[5, 0]} >
+          <div className={(home_click==false && name=="Start Here!") ? styles.blink_me : styles.norm}>
           <div className="annotation" style={{ transform: `translate3d(-50%, -${annotationOffset}%, 0)` }} >{name}</div>
+          </div>
         </Html>
       </mesh>
       <Ecliptic xRadius={xRadius} zRadius={zRadius} />

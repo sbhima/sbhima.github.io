@@ -20,7 +20,7 @@ body {
   /* transform: translate3d(-50%, -210%, 0); */
   text-align: center;
   background-color: transparent;
-  color: inherit;
+  color: white;
   border-radius: 1rem;
   /* border-color: white;
   border-width: 0.11rem;
@@ -109,9 +109,14 @@ a {
 }
 
 .blink_me {
-  animation: blinker 1s linear infinite
+  animation: blinker 1s linear infinite;
+  color: yellow;
 }
 
 @keyframes blinker {
   50% {opacity: 0;}
+}
+
+.norm {
+    color: white;
 }
