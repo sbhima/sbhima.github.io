@@ -27,15 +27,11 @@ export default function Projects() {
                     <div className={styles.leftSide}>
                         <img src={hack_umbc_pic} alt="A picture of the HackUMBC logo"
                             className={styles.galleryImage}
-                            height={1664*0.11}
-                            width={2560*0.18}
-                            style={{marginTop: "1.5rem",marginLeft: "2.5rem"}}
+                            style={{marginTop: "1.5rem",marginLeft: "2.5rem",height: "auto", width: "30vw"}}
                             />
                         <img src={all_thyme} alt="A picture on the about page"
                             className={styles.galleryImage}
-                            height={1664*0.16}
-                            width={2560*0.18}
-                            style={{marginTop: "-1rem",marginLeft: "2.5rem"}}
+                            style={{marginTop: "-1rem",marginLeft: "2.5rem",height: "auto", width: "30vw"}}
                             />
                     </div>
                 </div>
@@ -48,14 +44,10 @@ export default function Projects() {
                     <div className={styles.leftSide}>
                         <img src={testudo_tracker_homepage} alt="A picture of our logo"
                             className={styles.galleryImage}
-                            height={4032*0.059}
-                            width={3024*0.15}
-                            style={{marginTop: "1.4rem",marginLeft: "3.4rem"}}/>
+                            style={{marginTop: "1.4rem",marginLeft: "3.4rem",height: "auto", width: "28vw"}}/>
                         <img src={testudo_tracker_track_page} alt="A picture of our logo"
                             className={styles.galleryImage}
-                            height={4032*0.0573}
-                            width={3024*0.15}
-                            style={{marginTop: "1.2rem",marginLeft: "3.5rem"}}/>
+                            style={{marginTop: "1.2rem",marginLeft: "3.5rem",height: "auto", width: "28vw"}}/>
                     </div>
 
                             
@@ -70,9 +62,7 @@ export default function Projects() {
                         <div className={styles.leftSide}>
                             <img src={mario_image} alt="A picture of our logo"
                                 className={styles.galleryImage}
-                                height={315}
-                                width={315}
-                                style={{marginTop: "7.6rem",marginLeft: "7.3rem"}}/>
+                                style={{marginTop: "7.6rem",marginLeft: "7.3rem",height: "auto", width: "22vw"}}/>
                         </div>
                 </div>
 
@@ -84,9 +74,8 @@ export default function Projects() {
                         <div className={styles.leftSide}>
                             <img src={tj_logo} alt="A picture of our logo"
                                 className={styles.galleryImage}
-                                height={315}
-                                width={315}
-                                style={{marginTop: "7.6rem",marginLeft: "7.3rem"}}/>
+
+                                style={{marginTop: "7.6rem",marginLeft: "7.3rem",height: "auto", width: "22vw"}}/>
                         </div>
                 </div>
 

@@ -22,15 +22,11 @@ export default function About() {
                     <div className={styles.leftSide}>
                         <img src={shenandoah_view} alt="A picture of the valley"
                             className={styles.galleryImage}
-                            height={1536*0.1335}
-                            width={2730*0.1335}
-                            style={{marginTop: "1.5rem",marginLeft: "6.4rem"}}
+                            style={{marginTop: "1.5rem",marginLeft: "6.4rem",height: "auto", width: "25vw"}}
                             />
                         <img src={georgetown_view} alt="A picture of georgetown"
                             className={styles.galleryImage}
-                            height={3024*0.09}
-                            width={4032*0.09}
-                            style={{marginTop: "-0.7rem",marginLeft: "6.4rem"}}
+                            style={{marginTop: "-0.7rem",marginLeft: "6.4rem",height: "auto", width: "25vw"}}
                             />
                     </div>
                 </div>
@@ -43,9 +39,7 @@ export default function About() {
                     <div className={styles.leftSide}>
                         <img src={shivank_band} alt="A picture of me in band"
                             className={styles.galleryImage}
-                            height={1694*0.25}
-                            width={1136*0.25}
-                            style={{marginTop: "4.1rem",marginLeft: "10.1rem"}}
+                            style={{marginTop: "4.1rem",marginLeft: "10.1rem",height: "auto", width: "21vw"}}
                             />
                     </div>
                 </div>
@@ -58,9 +52,7 @@ export default function About() {
                     <div className={styles.leftSide}>
                         <img src={salaar_poster} alt="A poster of Salaar"
                             className={styles.galleryImage}
-                            height={5625*0.085}
-                            width={3896*0.085}
-                            style={{marginTop: "1.5rem",marginLeft: "7.9rem"}}
+                            style={{marginTop: "1.5rem",marginLeft: "7.9rem",height: "auto", width: "24vw"}}
                             />
                     </div>
                 </div>
@@ -73,9 +65,7 @@ export default function About() {
                     <div className={styles.leftSide}>
                         <img src={set_your_heart_ablaze} alt="A digital art piece"
                             className={styles.galleryImage}
-                            height={2532*0.212}
-                            width={1170*0.212}
-                            style={{marginTop: "0rem",marginLeft: "9.9rem"}}
+                            style={{marginTop: "0rem",marginLeft: "9.9rem",height: "auto", width: "17vw"}}
                             />
                     </div>
                 </div>

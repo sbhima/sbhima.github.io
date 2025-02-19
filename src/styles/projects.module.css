@@ -37,8 +37,8 @@
 	overflow-x: scroll;
 	/* scroll-padding: 0 50%; */
 	scroll-snap-type: x mandatory;
-    height: 85%;
-    width: 100%
+    height: 85vh;
+    width: 100vw
 }
 /* look at the bare bones playground */
 
@@ -46,14 +46,14 @@
     scroll-snap-align: center;
     /* display: inline-block; */
 	/* height: 100%; */
-    min-width: 75%;
+    min-width: 75vw;
+    min-height: 60vh;
     /* width: 100%; */
 	/* border-radius: 3px; */
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 8.5rem;
-    margin-right: 8.5rem;
-	font-size: 6rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
     /* scroll-margin: 0; */
     /* border-left: 1px solid white; */
     border: 1px solid white;
@@ -71,14 +71,14 @@
 	scroll-snap-align: center;
     /* display: inline-block; */
 	/* height: 100%; */
-    min-width: 75%;
+    min-width: 75vw;
+    min-height: 60vh;
     /* width: 100%; */
 	/* border-radius: 3px; */
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: -2rem;
-    margin-right: 8.5rem;
-	font-size: 6rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: -2.5vw;
+    margin-right: 8vw;
     /* scroll-margin: 0; */
     border: 1px solid white;
     /* border-right: 1px solid white; */
@@ -89,13 +89,13 @@
 }
 
 .itemTitle {
-    font-size: 3.9rem;
-    max-width: 50rem;
+    font-size: calc(2.2 * (1.5vh + 1.1vw));
+    max-width: 50vw;
     font-weight: bold;
-    margin-top: 2rem;
+    margin-top: 3.5vh;
     font-family: var(--title_font);
     font-weight: 300;
-    padding-left: 2rem;
+    padding-left: 1.5vw;
 
     
     /* border-bottom: 0.1rem solid white; */
@@ -108,12 +108,12 @@
 }
 
 .flavorText {
-    font-size: 1.2rem;
-    max-width: 35rem;
+    font-size: calc(.7 * (1.5vh + 1.1vw));
+    max-width: 35vw;
     font-family: var(--body_font);
     font-weight: 300;
-    margin-left: 2rem;
-    margin-top: -1.5rem;
+    margin-left: 1.5vw;
+    margin-top: calc(-0.6 * (10vh + 1.1vw));
     /* padding-left: 2rem;
     padding-right: 2rem;
     margin-top: -5rem;
